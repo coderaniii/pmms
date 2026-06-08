@@ -6,6 +6,9 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+console.log('Loading routes...'); // ADD THIS LINE
+app.use('/api/auth', require('./routes/auth'));
+console.log('Auth route loaded'); // ADD THIS LINE
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
