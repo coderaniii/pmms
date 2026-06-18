@@ -5,8 +5,6 @@ A web-based maintenance management system built during my internship at Tata Ste
 ## Live Demo
 🔗 https://pmms-l5o1ifup5-coderaniiis-projects.vercel.app
 
-*Login credentials available on request — this is an internal tool built for Tata Steel and access is restricted.*
-
 ## Tech Stack
 
 - **Frontend:** React, Tailwind CSS, Framer Motion, Three.js
