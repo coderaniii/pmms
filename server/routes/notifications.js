@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const protect = require('../middleware/authMiddleWare');
+const protect = require('../middleware/authMiddleware');
 const Notification = require('../models/notification');
 const WorkOrder = require('../models/WorkOrder');
 
