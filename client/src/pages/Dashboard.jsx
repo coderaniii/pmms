@@ -115,6 +115,12 @@ const Dashboard = () => {
             >
               Preventive
             </button>
+            <button
+              onClick={() => navigate('/ai-diagnostics')}
+              className="w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 text-gray-400 hover:text-white text-sm font-medium uppercase tracking-wider transition-all"
+            >
+              AI Diagnostics
+            </button>
           </nav>
 
           <button

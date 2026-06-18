@@ -103,6 +103,12 @@ const BreakdownMaintenance = () => {
               className="w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 text-gray-400 hover:text-white text-sm font-medium uppercase tracking-wider transition-all">
               Preventive
             </button>
+            <button
+              onClick={() => navigate('/ai-diagnostics')}
+              className="w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 text-gray-400 hover:text-white text-sm font-medium uppercase tracking-wider transition-all"
+            >
+              AI Diagnostics
+            </button>
           </nav>
 
           <button onClick={() => { localStorage.clear(); navigate('/login'); }}
@@ -123,11 +129,10 @@ const BreakdownMaintenance = () => {
           <div className="flex gap-2 mb-8">
             {['workorders', 'create'].map(t => (
               <button key={t} onClick={() => setTab(t)}
-                className={`px-6 py-2 rounded-lg text-sm font-medium uppercase tracking-widest transition-all ${
-                  tab === t
-                    ? 'bg-red-600 text-white'
-                    : 'bg-white/5 text-gray-400 hover:text-white border border-white/10'
-                }`}>
+                className={`px-6 py-2 rounded-lg text-sm font-medium uppercase tracking-widest transition-all ${tab === t
+                  ? 'bg-red-600 text-white'
+                  : 'bg-white/5 text-gray-400 hover:text-white border border-white/10'
+                  }`}>
                 {t === 'workorders' ? 'Work Orders' : 'Create Notification'}
               </button>
             ))}

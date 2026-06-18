@@ -80,6 +80,13 @@ const PreventiveMaintenance = () => {
               className="w-full text-left px-4 py-3 rounded-xl bg-red-600/20 border border-red-500/30 text-red-400 text-sm font-medium uppercase tracking-wider">
               Preventive
             </button>
+
+            <button
+              onClick={() => navigate('/ai-diagnostics')}
+              className="w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 text-gray-400 hover:text-white text-sm font-medium uppercase tracking-wider transition-all"
+            >
+              AI Diagnostics
+            </button>
           </nav>
 
           <button onClick={() => { localStorage.clear(); navigate('/login'); }}
@@ -100,11 +107,10 @@ const PreventiveMaintenance = () => {
           <div className="flex gap-2 mb-8">
             {['tasks', 'create'].map(t => (
               <button key={t} onClick={() => setTab(t)}
-                className={`px-6 py-2 rounded-lg text-sm font-medium uppercase tracking-widest transition-all ${
-                  tab === t
+                className={`px-6 py-2 rounded-lg text-sm font-medium uppercase tracking-widest transition-all ${tab === t
                     ? 'bg-red-600 text-white'
                     : 'bg-white/5 text-gray-400 hover:text-white border border-white/10'
-                }`}>
+                  }`}>
                 {t === 'tasks' ? 'All Tasks' : 'Add Task'}
               </button>
             ))}
@@ -128,11 +134,10 @@ const PreventiveMaintenance = () => {
                         <div>
                           <div className="flex items-center gap-3 mb-1">
                             <span className="text-white font-bold">{task.task_name}</span>
-                            <span className={`px-3 py-1 rounded-full text-xs font-medium border ${
-                              task.status === 'Completed'
+                            <span className={`px-3 py-1 rounded-full text-xs font-medium border ${task.status === 'Completed'
                                 ? 'text-green-400 bg-green-600/20 border-green-500/30'
                                 : 'text-yellow-400 bg-yellow-600/20 border-yellow-500/30'
-                            }`}>
+                              }`}>
                               {task.status}
                             </span>
                           </div>

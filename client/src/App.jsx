@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import BreakdownMaintenance from './pages/BreakdownMaintenance';
 import PreventiveMaintenance from './pages/PreventiveMaintenance';
+import AIDiagnostics from './pages/AIDiagnostics';
 
 const PrivateRoute = ({ children }) => {
   const { user } = useAuth();
@@ -29,6 +30,11 @@ function App() {
           <Route path="/preventive" element={
             <PrivateRoute>
               <PreventiveMaintenance />
+            </PrivateRoute>
+          } />
+          <Route path="/ai-diagnostics" element={
+            <PrivateRoute>
+              <AIDiagnostics />
             </PrivateRoute>
           } />
           <Route path="*" element={<Navigate to="/" />} />

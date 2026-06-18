@@ -16,6 +16,8 @@ app.use('/api/notifications', require('./routes/notifications'));
 app.use('/api/workorders', require('./routes/workorders'));
 app.use('/api/tasks', require('./routes/tasks'));
 app.use('/api/dashboard', require('./routes/dashboard'));
+app.use('/api/ai', require('./routes/ai'));
+
 
 app.get('/', (req, res) => res.send('PMMS Server Running 🔥'));
 
@@ -27,3 +29,4 @@ mongoose.connect(process.env.MONGO_URI)
     );
   })
   .catch(err => console.error('❌ DB Error:', err));
+
