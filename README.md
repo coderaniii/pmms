@@ -23,4 +23,4 @@ A web-based maintenance management system built during my internship at Tata Ste
 
 ## Note
 
-This project was built as part of my summer internship at Tata Steel and is being considered for actual use on the plant floor. Still actively improving it as I get feedback.
+This project was built as part of my Summer Internship at Tata Steel and is being considered for actual use on the plant floor. Still actively improving it as I get feedback.
