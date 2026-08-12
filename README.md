@@ -16,7 +16,7 @@ A web-based maintenance management system built during my internship at Tata Ste
 ## Features
 
 - Login system with JWT authentication
-- Dashboard with real-time stats
+- Dashboard with real-time statistics
 - Breakdown Maintenance — raise notifications, auto-generate work orders, update status
 - Preventive Maintenance — schedule tasks, track frequency, mark complete
 - AI Fault Diagnosis — describe an equipment issue and get an instant probable cause, recommended action, and priority level
